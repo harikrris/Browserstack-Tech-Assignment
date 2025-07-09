@@ -19,8 +19,7 @@ import java.util.Map;
 public class BaseTest {
 
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-    //    public static final String USERNAME = "srihari_GgVjU1";
-//    public static final String ACCESS_KEY = "pECpwfAnvQXDpk2Vi1Lh";
+   
     static String USERNAME = ConfigReader.getKeyFromConfig("BROWSERSTACK_UNAME");
     static String ACCESS_KEY = ConfigReader.getKeyFromConfig("BROWSERSTACK_ACCESSKEY");
     public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
