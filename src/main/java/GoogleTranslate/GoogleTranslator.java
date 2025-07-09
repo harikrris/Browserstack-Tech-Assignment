@@ -19,21 +19,7 @@ public class GoogleTranslator {
             .build()
             .getService();
 
-//    public static String translatedText() {
-//
-//    }
 
-//    public static void main(String[] args) {
-//        List<String> titleInEnglish = new ArrayList<String>();
-//        titleInEnglish.add("I Love English");
-//        titleInEnglish.add("English is a good language");
-//
-//
-//        String[] words = titleInEnglish.toLowerCase().replaceAll("[^a-z ]", "").split("\\s+");
-//        for(String word : words){
-//            countMap.put(word, countMap.getOrDefault(word,0)+1);
-//        }
-//    }
 
     public static String translateText(String text){
         Translation translation = translate.translate(text, Translate.TranslateOption.sourceLanguage("es"),
