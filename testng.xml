@@ -1,0 +1,62 @@
+<suite name = "Elpais test" parallel="tests" thread-count="5">
+    <test name = "Chrome_Windows">
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="11"/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser_version" value="latest"/>
+        <parameter name="device" value=""/>
+        <parameter name="isMobile" value="false"/>
+        <parameter name="platformName" value=""/>
+        <classes>
+            <class name="com.Elpais.ElPaisTest"/>
+        </classes>
+    </test>
+    <test name="Edge_Windows">
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <parameter name="browser" value="Edge"/>
+        <parameter name="browser_version" value="latest"/>
+        <parameter name="device" value=""/>
+        <parameter name="isMobile" value="false"/>
+        <parameter name="platformName" value=""/>
+        <classes>
+            <class name="com.Elpais.ElPaisTest"/>
+        </classes>
+    </test>
+    <test name="Safari_macOS">
+        <parameter name="os" value="OS X"/>
+        <parameter name="os_version" value="Monterey"/>
+        <parameter name="browser" value="Safari"/>
+        <parameter name="browser_version" value="15.6"/>
+        <parameter name="device" value=""/>
+        <parameter name="isMobile" value="false"/>
+        <parameter name="platformName" value=""/>
+        <classes>
+            <class name="com.Elpais.ElPaisTest"/>
+        </classes>
+    </test>
+    <test name="iPhone_14">
+        <parameter name="os" value=""/>
+        <parameter name="os_version" value="16"/>
+        <parameter name="browser" value="Safari"/>
+        <parameter name="browser_version" value=""/>
+        <parameter name="device" value="iPhone 14"/>
+        <parameter name="isMobile" value="true"/>
+        <parameter name="platformName" value="iOS"/>
+        <classes>
+            <class name="com.Elpais.ElPaisTest"/>
+        </classes>
+    </test>
+    <test name="Galaxy_S23">
+        <parameter name="os" value=""/>
+        <parameter name="os_version" value=""/>
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser_version" value=""/>
+        <parameter name="device" value="Samsung Galaxy S23"/>
+        <parameter name="isMobile" value="true"/>
+        <parameter name="platformName" value="Android"/>
+        <classes>
+            <class name="com.Elpais.ElPaisTest"/>
+        </classes>
+    </test>
+</suite>
